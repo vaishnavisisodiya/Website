@@ -1,0 +1,184 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header
+{
+    
+    padding: 38px;
+    margin-left: 30%;
+}
+main
+{
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+.container
+{
+    background-color: white;
+    width: 600px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid rgb(110, 15, 110);
+    box-shadow: 0 0 7px rgba(0 , 0 , 0 , 0.5);
+}
+.container h2
+ {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 30px;
+    text-align: center;
+ }
+ .input-name
+ {
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+ }
+ .lock
+{
+    padding: 8px 11px;
+}
+.name
+{
+    width: 45%;
+    padding: 8px 0px 8px 40px;
+}
+.input-name span
+{
+  margin-left: 35px;
+}
+.text-name
+{
+    width: 100%;
+    padding: 8px 0px 8px 40px;
+}
+.input-name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: rgb(110, 15, 110);
+    border-right: 1px solid #cccccc;
+}
+.email
+{
+    padding: 8px;
+}
+.location
+{
+    padding: 8px;
+}
+.number
+{
+    padding: 8px;
+}
+.text-name,.name
+{
+    border: 1px solid #cccccc;
+    outline: none;
+}
+.text-name:hover,.name:hover
+{
+    background-color: #fafafa;
+}
+.text-name:focus,.name:focus
+{
+    border: 1px solid rgb(110, 15, 110);
+}
+.message
+{
+    width: 80%;
+    height: auto ;
+    outline: none;
+    border: 1px solid #cccccc;
+    background-color: white;
+}
+.message:hover
+{
+    background-color: #f2f2f2;
+}
+.check
+{
+    margin-right: 15px;
+    position: relative;
+    font-size: 20px;
+}
+.check::before
+{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    vertical-align: -2px;
+    border: 2px solid #cccccc;
+    padding: 2.5px;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2 ease;
+}
+.check::after
+{
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+}
+.check-button
+{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+
+}
+.check-button:hover + .check::before
+{
+   border-color:  rebeccapurple;
+}
+.check-button:checked + .check::before
+{
+    border-color: green;
+}
+.check-button:checked + .check::after
+{
+    -moz-animation: check 0.8s ease 0s running;
+    -webkit-animation:check 0.8s ease 0s running ;
+    animation: check 0.8s ease 0s running;
+    display: block;
+    width: 7px;
+    height: 20x;
+    border-color: green;
+
+}
+.button
+{
+    background-color: rgb(110,15,110);
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.button:hover
+{
+    background-color: green;
+}
+
