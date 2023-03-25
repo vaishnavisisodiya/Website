@@ -1,0 +1,371 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+.menu_bar{ 
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;*/
+    width: 100%;
+    margin: -2px;
+    display: flex;
+    align-items: center;
+    padding: 19px 0;
+    justify-content: space-between;
+   
+}
+.logo {
+    width: 100px;
+    cursor: pointer;
+    margin-left: 120px;
+    padding: -60px;
+}
+.menu_bar ul{
+	list-style: none;
+	display: flex;
+}
+.menu_bar ul li{
+/*	padding: 10px 30px;*/
+	position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.menu_bar ul li a{
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+.menu_bar ul li a:hover{
+	color: blue;
+}
+.dm{
+	display: none;
+}
+ .menu_bar ul li:hover .dm{
+ 	display: block;
+ 	position: absolute;
+ 	left: 0;
+ 	top:100%;
+ 	background-color: white;
+ }
+ .menu_bar ul li:hover .dm ul{
+ 	display: block;
+ 	margin: 10px;
+ }
+ .menu_bar ul li:hover .dm ul li{
+ 	width: 150px;
+ 	padding: 10px;
+ }
+ .fas{
+ 	float: right;
+ 	margin-left: 10px;
+ 	padding-top:3px ;
+  }
+   
+  .dm2{
+    display: none;
+}
+.hover-me:hover .dm2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: white;
+}
+.r{
+     background-color: white;
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.c{
+	flex-basis: 50%;
+}
+h1{
+	color: black;
+	font-size: 60px;
+	margin: 25px;
+}
+p{
+	color: black;
+	font-size: 25px;
+	line-height: 30px;
+	margin: 25px;
+}
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card1{
+    background-image: url(../img/kanchipuram.jpg);	
+}
+.card2{
+    background-image: url(../img/mallikarjunatemple.jpg);	
+}
+.card3{
+    background-image: url(../img/omkareshwar-temple-view.jpg);	
+}
+.card4{
+    background-image: url(../img/badrinathg.jpg);	
+}
+.card5{
+    background-image: url(../img/Shri-Kedarnath-Temple.jpg);	
+}
+.card6{
+    background-image: url(../img/Trimbhakeshwar_Temple.jpg);	
+}
+.card:hover{
+	transform: translateY(-10px);
+}
+.b{
+	width: 100%;
+	height: 200px;
+}
+
+.s1{
+	height: 100vh;
+	background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(../img/shivu.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.heading{
+   text-align: center;
+/*   margin-top: 25px;*/
+ }
+ 
+
+ .heading p{
+   font-size: 20px;
+   color: white;
+   margin-bottom: 50px;
+ }
+ .h1{
+ 	width: 1200px;
+ 	height: auto;
+ 	margin-left:10px;
+ 	color:white;
+ 	position: relative;
+ }
+ .h1 pre{
+ 	padding-top: 90px;
+ 	padding-bottom: 100px;
+ 	font-family: sans-serif;
+ 	letter-spacing: 1.2px;
+ 	line-height: 30px;
+ }
+  .heading1{
+  text-align: center;
+  margin-top: 25px;
+ }
+ .heading1 h1{
+  font-size: 50px;
+  color: black;
+  margin-bottom: -70px;
+ }
+ .c1{
+  padding: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+ .c1 .b1{
+  position: relative;
+  width: 350px;
+  padding: 10px;
+  background: lightgrey;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+ }
+ .c1 .b1 .i1{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+
+ }
+ .c1 .b1:nth-child(1) .i1{
+  box-shadow: 0 0 0 0 lightblue;
+  background:black;
+ }
+.c1 .b1:nth-child(1):hover .i1{
+  box-shadow: 0 0 0 400px lightblue;
+} 
+ .c1 .b1:nth-child(2) .i1{
+  box-shadow: 0 0 0 0 lightblue;
+  background: black;
+ }
+.c1 .b1:nth-child(2):hover .i1{
+  box-shadow: 0 0 0 400px lightblue;
+} 
+ .c1 .b1:nth-child(3) .i1{
+  box-shadow: 0 0 0 0  lightblue;
+  background: black;
+ }
+.c1 .b1:nth-child(3):hover .i1{
+  box-shadow: 0 0 0 400px lightblue;
+} 
+.c1 .b1:nth-child(4) .i1{
+  box-shadow: 0 0 0 0  lightblue;
+  background: black;
+ }
+.c1 .b1:nth-child(4):hover .i1{
+  box-shadow: 0 0 0 400px lightblue;
+} 
+.c1 .b1:nth-child(5) .i1{
+  box-shadow: 0 0 0 0  lightblue;
+  background: black;
+ }
+.c1 .b1:nth-child(5):hover .i1{
+  box-shadow: 0 0 0 400px lightblue;
+} 
+.c1 .b1:nth-child(6) .i1{
+  box-shadow: 0 0 0 0  lightblue;
+  background: black;
+ }
+.c1 .b1:nth-child(6):hover .i1{
+  box-shadow: 0 0 0 400px lightblue;
+} 
+.c1 .b1 .c2{
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.c1 .b1:hover .c2{
+  color: black;
+}
+.c1 .b1 .c2 h3{
+  font-size: 30px;
+  margin: 10px 0;
+  padding: 0;
+}
+.c1 .b1 .c2 p{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+.c1 .b1:before{
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba( 255, 255, 255, .2);
+  z-index: 2;
+  pointer-events: none;
+}
+.container1{
+    max-width: 1170px;
+    margin:auto;
+}
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer
+{
+    background-color: #101010;
+    padding: 70px 0;
+}
+ 
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col p{
+	font-size: 20px;
+    line-height: 30px;
+    margin: 25px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+ margin-bottom: 10px;
+}
+.footer-col ul li a{
+ font-size: 16px;
+ text-transform: capitalize;
+ color:#ffffff;
+ text-decoration: none;
+ font-weight: 300;
+ color: #bbbbbb;
+ display:red;
+ transition: all 0.3s ease;
+}
+.footer-col .Social-links a{ 
+ display: inline-block;
+ height: 40px;
+ width: 40px; 
+ background-color: rgba(255,255,255,0.2);
+ margin: 0 10px 10px 0;
+ text-align: center;
+ line-height: 40px;
+ border-radius: 50%;
+ color: #ffffff;
+ transition: all 0.5s ease; 
+} 
+.footer-col .Social-links a:hover{
+    color: #242624;
+    background-color: #ffffff;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+ }
+ .footer{
+ 	background: #212226;
+ 	padding: 20px;
+ }
+ .footer p{
+ 	color: #fff;
+ }
+
+   
