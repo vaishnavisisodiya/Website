@@ -11,47 +11,47 @@
 <body>
     <header>
         <div class="imge-enquiry">
-            <img src="image/imageenq2.png"  width="60%" alt="enquiry image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqO_uH86yMfzJ-QtcJtzdN0QdqSACLZVlW1w&usqp=CAU"  width="60%" alt="enquiry image">
         </div>
     </header>
     <main>
     <div class="container">
         <h2>Enquiry Form</h2>
    <div class="form-container">
-     <form action="">
+     <form action="php/enquiry.php" method="post">
         <div class="input-name">
             <i class="fa fa-user lock" ></i>
-            <input type="text" placeholder="first name" class="name">
+            <input type="text" placeholder="first name" class="name" name="firstname">
             <span>
                 <i class="fa fa-user lock" ></i>
-                <input type="text" placeholder="last name" class ="name">
+                <input type="text" placeholder="last name" class ="name" name="lastname">
             </span>
         </div>
         <div class="input-name">
             <i class="fa fa-envelope email" ></i>
-            <input type="email" placeholder="email" class="text-name">
-            
+            <input type="email" placeholder="email" class="text-name" name="email">
+
         </div>
         <div class="input-name">
             <i class="fa fa-location-arrow location" ></i>
-            <input type="text" placeholder="your city" class="text-name">
-            
+            <input type="text" placeholder="your city" class="text-name" name="address">
+
         </div>
         <div class="input-name">
             <i class="fa fa-phone number" ></i>
-            <input type="phone number" placeholder="phone number" class="text-name">
-            
+            <input type="phone number" placeholder="phone number" class="text-name" name="phone">
+
         </div>
         <div class="input-name">
             <h3>Message</h3> <br>
-            <textarea name="message" id=""  rows="4" class="message"></textarea>
+            <textarea name="message" id=""  rows="4" class="message" name="message"></textarea>
          </div>
          <div class="input-name">
             <input type="checkbox" id="cb" class="check-button">
             <label for="cb" class="check" >I Accept the terms and conditions</label>
          </div>
          <div class="input-name">
-            <input type="submit" class="button" value="Submit">
+            <input type="submit" class="button" value="Submit" name="submit">
          </div>
      </form>
    </div> 
